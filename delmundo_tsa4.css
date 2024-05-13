@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: 'Noto Serif', serif;
+    background-image: url('bg.png');
+    background-size: cover;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+}
+
+h1 {
+    color: green;
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.freshmen {
+    color: blue;
+}
+
+.free {
+    color: red;
+}
+
+.walk-in {
+    color: orange;
+}
+
+.registration {
+    color: green;
+    text-decoration: none;
+}
+
+.contact {
+    color: blue;
+}
