@@ -3,7 +3,9 @@
 body {
     font-family: 'Noto Serif', serif;
     background-image: url('bg.png');
+    background-repeat: no-repeat;
     background-size: cover;
+
     margin: 0;
 }
 
@@ -42,4 +44,18 @@ h2 {
 
 .contact {
     color: blue;
+}
+
+.P1 {
+    font-weight: bold;
+}
+
+.P2 {
+    text-align: right;
+    font-style: italic;
+}
+
+.P3 {
+    text-align: right;
+    font-style: italic;
 }
