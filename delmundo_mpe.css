@@ -6,7 +6,6 @@
     box-sizing: border-box;
     transition: 0.5s ease all;
     font-family: "Poppins", sans-serif;
-
     transition: 0.5s all ease;
 }
 
@@ -42,23 +41,24 @@ body{
     align-items: center;
     gap: 20px;
     justify-content: space-between;
+    width: 300px;
+    height: 100%;
+    border: 5px solid black;
+    border-radius: 10px;
 }
 
 .pokeball{
     display: none;
-}
-.pokeball {
     width: 32px;
 }
 
-.pokeball img{
+.pokeball, .img{
     width: 100%;
 }
 
 .box p{
     display: none;
 }
-
 
 .bellsprout{
     background-color: #FFF800;
@@ -85,7 +85,7 @@ body{
 }
 
 .jigglypuff{
-    background-color: #ca3279;
+    background-color: #D685AD;
 }
 
 .meowth{
@@ -105,7 +105,7 @@ body{
 }
 
 .squirtle{
-    background-color: #3cc9c2;
+    background-color: #4bccc6;
 }
 
 @media (max-width: 1100px){
@@ -113,58 +113,49 @@ body{
         flex-direction: column;
         background-position: left top;
     }
-
     .box{
         width: 100%;
         padding: 20px 20px;
     }
-
     .box img{
         width: 128px;
     }
-
     .box p{
         display: contents;
     }
-
     .box .pokeball{
         display: contents;
     }
-
     .pokeball img {
         width: 64px;
     }
-
     .box p{
         font-size: 3rem;
     }
-
-.box:hover{
-background-image: url(./img/5249036.jpg);
-background-size: cover;
+    .box:hover{
+    background-image: url(./img/5249036.jpg);
+    background-size: cover;
     background-position: center;
-}
+    }
 }
 
-@media (max-width: 700px){ .pokeball img{
+@media (max-width: 700px){ 
+    .pokeball img{
     display: none;
-}}
+    }
     .box{
         flex-direction: column;
         gap: 0;
     }
-
     .box img{
         width: 256px;
     }
-
     .box p{
         font-size: 2.5rem;
     }
-
-
-.box:hover{
-background-image: url(./img/5249036.jpg);
-background-size: cover;
+    .box:hover{
+    background-image: url(./img/5249036.jpg);
+    background-size: cover;
     background-position: center;
+    }
 }
