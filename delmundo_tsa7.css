@@ -79,7 +79,7 @@ nav ul li a:hover {
 }
 
 .hero button:hover {
-    background-color: #b00710;
+    background-color: #300505;
 }
 
 .container {
@@ -163,7 +163,7 @@ nav ul li a:hover {
 }
 
 #episodes li:hover {
-    background-color: #444;
+    background-color: #777474;
 }
 
 #episodes li::before {
