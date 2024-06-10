@@ -15,9 +15,14 @@ header {
     padding: 10px 20px;
 }
 
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
 header .logo h1 {
     margin: 0;
-    font-family: 'Stranger Things Font', sans-serif;
+    font-family: 'ITC Benguiat', serif;
 }
 
 header .logo img {
@@ -41,6 +46,11 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e50914;
 }
 
 .hero {
@@ -48,18 +58,13 @@ nav ul li a {
     color: #fff;
     text-align: center;
     padding: 100px 20px;
-}
-
-.hero img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    margin-bottom: 20px;
+    background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmJ1bGgyZGl3YW9tOTQzaXp0ZTJrN3pxam9wY2pramIyYzBicWpxZSZlcD12MV9pbnRlcm5naWZfYnlfaWQmY3Q9Zw/F1cehBDCMnsukCPUXo/giphy.webp');
 }
 
 .hero h2 {
     font-size: 2.5em;
     margin: 20px 0;
+    font-family: 'ITC Benguiat', serif;
 }
 
 .hero button {
@@ -69,6 +74,12 @@ nav ul li a {
     font-size: 1em;
     cursor: pointer;
     color: #fff;
+    transition: background-color 0.3s;
+    font-family: 'ITC Benguiat', serif;
+}
+
+.hero button:hover {
+    background-color: #b00710;
 }
 
 .container {
@@ -78,19 +89,39 @@ nav ul li a {
     padding: 20px;
 }
 
-.left-column, .right-column {
+.left-column,
+.right-column {
     width: 48%;
     margin-bottom: 20px;
 }
 
-.left-column img, .right-column img {
+.left-column img,
+.right-column img {
     width: 100%;
     border-radius: 10px;
+    transition: transform 0.3s;
 }
 
-.left-column h2, .right-column h2 {
-    font-family: 'Stranger Things Font', sans-serif;
+.left-column img:hover,
+.right-column img:hover {
+    transform: scale(1.05);
+}
+
+.left-column h2,
+.right-column h2 {
+    font-family: 'ITC Benguiat', serif;
     text-align: center;
+}
+
+.section-box {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.section-box h2 {
+    font-family: 'ITC Benguiat', serif;
 }
 
 .character-profiles {
@@ -111,8 +142,53 @@ nav ul li a {
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
+    transition: transform 0.3s;
 }
 
+.character-profile img:hover {
+    transform: scale(1.05);
+}
+
+#episodes ul {
+    list-style: none;
+    padding: 0;
+}
+
+#episodes li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#episodes li:hover {
+    background-color: #444;
+}
+
+#episodes li::before {
+    content: "📺 ";
+    font-size: 1.2em;
+}
+
+#gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+#gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer styles */
 footer {
     background-color: #111;
     color: #fff;
@@ -124,25 +200,36 @@ footer {
     color: #fff;
     margin: 0 5px;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
+.social-media a:hover {
+    color: #e50914;
+}
+
+/* Responsive styles */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .hero {
         padding: 50px 20px;
     }
-    
-    .left-column, .right-column {
+
+    .left-column,
+    .right-column {
         width: 100%;
         margin-bottom: 20px;
     }
-    
+
     .character-profile {
         width: 45%;
+    }
+
+    #gallery {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -150,13 +237,17 @@ footer {
     .hero h2 {
         font-size: 1.8em;
     }
-    
+
     .hero button {
         padding: 8px 16px;
         font-size: 0.9em;
     }
-    
+
     .character-profile {
         width: 100%;
+    }
+
+    #gallery {
+        grid-template-columns: 1fr;
     }
 }
