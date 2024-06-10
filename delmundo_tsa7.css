@@ -188,7 +188,6 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-/* Footer styles */
 footer {
     background-color: #111;
     color: #fff;
@@ -207,7 +206,6 @@ footer {
     color: #e50914;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
