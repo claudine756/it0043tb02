@@ -76,6 +76,7 @@ input {
     border-radius: 8px;
     flex-grow: 1;
     height: calc(100% - 40px);
+    height: 100vh;
 }
 
 .box {
@@ -90,6 +91,8 @@ input {
     border: 2px solid white;
     margin: 5px;
     transition: transform 0.3s;
+    height: 200px;
+    width: 200px;
 }
 
 .box:hover {
