@@ -680,7 +680,7 @@ section {
 }
 
 .aboutMePic {
-    display: auto;
+    display: flex;
     width: 45vw;
     justify-content: center;
     align-items: center;
